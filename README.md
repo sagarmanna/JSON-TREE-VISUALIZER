@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# 🌳 JSON Tree Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, interactive web app that visualizes JSON data as a connected, dynamic tree using **React**, **TypeScript**, and **React Flow**. Designed for clarity, usability, and insight.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+🔗 **Try it here:** [https://json-tree-visualizer-mu.vercel.app](https://json-tree-visualizer-mu.vercel.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📘 GitHub Repository
 
-## Expanding the ESLint configuration
+🔗 [https://github.com/sagarmanna/JSON-TREE-VISUALIZER](https://github.com/sagarmanna/JSON-TREE-VISUALIZER)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* 🌲 **Dynamic JSON Visualization** — Converts complex JSON data into an intuitive, connected node graph.
+* 🪄 **Smart Node Interactions** — Click to copy a JSON path instantly.
+* 🔍 **Zoom / Pan / Fit View** — Navigate large trees easily with smooth controls.
+* 🌓 **Dark & Light Mode** — Switch themes for better visibility.
+* 🖼️ **Export as Image** — Download the full tree as a PNG snapshot.
+* 💎 **Minimal & Modern UI** — Clean layout built with React Flow and custom styling.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧰 Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+| Layer              | Technologies            |
+| ------------------ | ----------------------- |
+| **Frontend**       | React, TypeScript, Vite |
+| **Visualization**  | React Flow              |
+| **Styling**        | CSS3, Custom Themes     |
+| **Build & Deploy** | Vercel, GitHub          |
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+## 🧑‍💻 Author
+
+**👨‍💻 Sagar Manna**
+📧 [sagarmanna954@gmail.com](mailto:sagarmanna954@gmail.com)
+🔗 [GitHub](https://github.com/sagarmanna)
