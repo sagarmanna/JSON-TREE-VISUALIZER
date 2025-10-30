@@ -1,0 +1,178 @@
+/* 🌐 Global Reset & Layout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #f5f6fa;
+  color: #222;
+}
+
+/* 🧱 App Structure */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 16px;
+  padding: 16px;
+  background: linear-gradient(135deg, #f6f8fb, #eef1f7);
+}
+
+/* 🧭 Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+/* 📦 Main Container */
+.container {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+  height: calc(100% - 60px);
+}
+
+/* 🧩 Left Panel */
+.left {
+  width: 360px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  overflow-y: auto;
+}
+
+/* 🌳 Right Panel */
+.right {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* 📝 JSON Input */
+textarea.json-input {
+  width: 100%;
+  height: 300px;
+  font-family: 'Fira Code', monospace;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #f9fafc;
+  color: #222;
+  resize: none;
+  transition: border-color 0.2s ease;
+}
+
+textarea.json-input:focus {
+  outline: none;
+  border-color: #6b5cff;
+  box-shadow: 0 0 0 2px rgba(107, 92, 255, 0.2);
+}
+
+/* 🔘 Buttons */
+button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #6b5cff, #2b7cff);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #7a6cff, #3c8cff);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* 🎛️ Controls & Search */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-bar input:focus {
+  border-color: #6b5cff;
+}
+
+/* 🟦 Node Styles */
+.node-label {
+  padding: 6px 8px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.node-object {
+  background: linear-gradient(135deg, #6b5cff, #2b7cff);
+}
+
+.node-array {
+  background: linear-gradient(135deg, #2ecc71, #1abc9c);
+}
+
+.node-primitive {
+  background: linear-gradient(135deg, #f39c12, #f1c40f);
+  color: #111;
+}
+
+/* 💻 Scroll Styling */
+.left::-webkit-scrollbar {
+  width: 6px;
+}
+.left::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.left::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* 🪶 Smooth transitions */
+*, *::before, *::after {
+  transition: all 0.2s ease-in-out;
+}
